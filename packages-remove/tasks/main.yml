@@ -1,0 +1,10 @@
+---
+# tasks file for packages-remove
+
+- name: Remove all exsisiting packages
+  yum:
+    name:
+      - httpd
+      - vsftpd
+      - chrony
+    state: absent
