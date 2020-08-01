@@ -1,0 +1,4 @@
+---
+  roles:
+    - role: packages-remove 
+    - role: packages-install 
