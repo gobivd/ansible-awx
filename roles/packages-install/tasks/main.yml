@@ -1,2 +1,9 @@
 ---
 # tasks file for packages-install
+- name: Remove all exsisiting packages
+  yum:
+    name:
+      - httpd
+      - vsftpd
+      - chrony
+    state: present
